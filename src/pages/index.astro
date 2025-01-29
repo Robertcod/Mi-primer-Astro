@@ -9,6 +9,7 @@ import SectionContainer from "../components/sectionContainer.astro";
 import Briefcase from "../icons/briefcase.astro";
 import CodeIcon from "../icons/codeIcon.astro";
 import Project from "../components/projectos.astro";
+
 ---
 
 <Layout
@@ -19,7 +20,7 @@ import Project from "../components/projectos.astro";
     <SectionContainer class="py-20 pb-24">
       <img
         class="rounded-full size-20"
-        src="/public/Imagen de WhatsApp 2025-01-24 a las 19.27.05_86d44036.jpg"
+        src=`/projects/images/yo.jpg`
         alt="RobertFoto"
       />
       <h1 class="text-white text-5xl nd:text-4xl font-bold flex gap-x-4 pb-2">
@@ -61,7 +62,7 @@ import Project from "../components/projectos.astro";
       <h2 class="text-2xl font-semibold mb-4 flex gap-x-2 items-center">
         <CodeIcon />Proyectos
       </h2>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <Project />
       </div>
     </SectionContainer>
