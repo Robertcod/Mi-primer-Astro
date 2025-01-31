@@ -18,35 +18,40 @@ import Project from "../components/projectos.astro";
 >
   <main>
     <SectionContainer class="py-20 pb-24">
-      <img
-        class="rounded-full size-20"
-        src=`/projects/images/yo.jpg`
-        alt="RobertFoto"
-      />
-      <h1 class="text-white text-5xl nd:text-4xl font-bold flex gap-x-4 pb-2">
-        Hola, <Badge>Soy Robert</Badge>
-      </h1>
-      <h2
-        class="font-semibold inline-flex animate-background-shine bg-[linear-gradient(110deg,#64748b,45%,#0f172a,55%,#64748b)] dark:bg-[linear-gradient(110deg,#b6eaff,45%,#8b5cf9,55%,#b6eaff)] bg-[length:250%_100%] bg-clip-text text-2xl text-transparent"
-      >
-        Desarrollador Web
-      </h2>
-      <p class="lg:text-xl text-xl text-wrap max-w-[700px]">
-        Tecnólogo en Análisis y Desarrollo de Software con especialización en
-        soluciones web. Experto en el desarrollo de aplicaciones eficientes y
-        escalables, centrado en mejorar la experiencia del usuario y optimizacion
-        procesos.
-      </p>
-
+      <div class="flex flex-col gap-y-4 md:flex md:flex-row-reverse md:items-center sm:gap-x-2 md:gap-x-6">
+        <figure class="md:flex md:flex-[7] md:justify-center sm:flex sm:flex-[4]">
+          <img
+          class="rounded-full size-32 md:size-40"
+          src=`/projects/images/yo.jpg`
+          alt="RobertFoto"
+        />
+        </figure>
+        <div class="md:flex-[20] ">
+          <h1 class="text-white text-4xl text-pretty font-bold flex flex-col sm:flex-row gap-x-1 pb-2">
+            Hola,<Badge class="block sm:inline">Soy Robert</Badge>
+          </h1>
+          <h2
+            class="font-semibold inline-flex animate-background-shine bg-[linear-gradient(110deg,#64748b,45%,#0f172a,55%,#64748b)] dark:bg-[linear-gradient(110deg,#b6eaff,45%,#8b5cf9,55%,#b6eaff)] bg-[length:250%_100%] bg-clip-text text-2xl text-transparent"
+          >
+            Desarrollador Web
+          </h2>
+          <p class="lg:text-xl text-xl text-wrap max-w-[700px]">
+            Tecnólogo en Análisis y Desarrollo de Software con especialización en
+            soluciones web. Experto en el desarrollo de aplicaciones eficientes y
+            escalables, centrado en mejorar la experiencia del usuario y optimizacion
+            procesos.
+          </p>
+        </div>
+      </div>
       <nav class="flex gap-4 mt-6 flex-wrap">
         <SocialPill href="google.com">
-          <GitHub class="size-6" />
-          GitHub
+          <GitHub class="size-6 shrink-0" />
+          <span class="break-all">GitHub</span>
         </SocialPill>
 
         <SocialPill>
-          <Mail class="size-6" />
-          fernandezhernandezr4@gmail.com
+          <Mail class="size-6 shrink-0" />
+          <span class="break-all">fernandezhernandezr4@gmail.com</span>
         </SocialPill>
       </nav>
     </SectionContainer>
